@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="#">JAVA</a></h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="modal">
+            <div class="modal-view">
+                <div class="modal-header">
+                    <div class="modal-title">Modal title</div>
+                    <button class="modal-close">x</button>
+                </div>
+                <div class="modal-content">
+                    Ducimus iste nesciunt commodi illo error minima eveniet est, quisquam dolorum sint!
+                </div>
+                <div class="modal-action">
+                    <button class="btn modal-close">Close</button>
+                    <button class="btn modal-close modal-save">Save changes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="baitap">
+                <h2>Tạo 1 button, khi click vào button đó thì màu button thay đổi</h2>
+                <button id="color" data-color="red">Click me</button>
+            </div>
+
+            <div class="baitap">
+                <h2>Form cơ bản để thực hiện phép nhân và phep chia</h2>
+                <table>
+                    <tr>
+                        <td>1st Number</td>
+                        <td><input class="first-number" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>2nd Number</td>
+                        <td><input class="second-number" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="multiply">Multiply</button>
+                            <button class="divide">Divide</button>
+                        </td>
+                    </tr>
+                </table>
+
+                <p>The Result Is:</p>
+                <span class="result"></span>
+            </div>
+
+            <div class="baitap">
+                <h2>Khi Click chuột vào Radio Button thì có các thông điệp (Message) tương ứng</h2>
+                 <form>
+                    1: <input type="radio" name="radio" value=" Bạn chọn số 1 " onClick="alert(value)">
+                    2: <input type="radio" name="radio" value=" Bạn chọn số 2 " onClick="alert(value)">
+                    3: <input type="radio" name="radio" value=" Bạn chọn số 3 " onClick="alert(value)" >
+                </form>
+            </div>
+
+            <div class="baitap">
+                <h2>Khi nhấp vào liên kết thì hiện lên một modal hmodal hỏi .Nếu OK thì ta link dến trang khác ,không thì ta không làm gì cả</h2>
+
+                <a href="https://facebook.com/" class="demo-btn">Open Modal</a>
+            </div>
+
+            <div class="baitap">
+                <h2>Kiểm tra tính hợp lệ của thông tin nhập vào</h2>
+
+                <form name="testform" id="test-form">
+                    Name:<input type="text" size=30 name="Name">
+                    Age:<input type="number" size=3 name="age">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Good Bye and Thanks!
+    </footer>
+</body>
